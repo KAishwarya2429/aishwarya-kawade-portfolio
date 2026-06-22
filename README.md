@@ -1,33 +1,180 @@
-# aishwarya-kawade-portfolio
+# Aishwarya Kawade Portfolio
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+A modern developer portfolio showcasing my journey in Software Engineering, AI Engineering, Open Source, and Cloud Technologies.
 
-## Built with v0
+## About
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+I am an MCA student, Open Source Contributor, and AI & Backend Engineer focused on building scalable software systems, intelligent automation solutions, and AI-powered applications.
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_0qsjs2HIAfc28iRXZWAfMbg6xJ2L)
+My interests include:
 
-## Getting Started
+* Backend Engineering
+* Artificial Intelligence & LLMs
+* Retrieval-Augmented Generation (RAG)
+* AI Agents & Automation
+* Cloud Computing
+* Distributed Systems
+* Open Source Development
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Highlights
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Open Source
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* GirlScript Summer of Code 2026 Contributor
+* Mifos Initiative Contributor (Google Summer of Code Ecosystem)
+* AgentAPI Contributor
+* EnterpriseRAG AI Contributor
 
-## Learn More
+### Professional Programs
 
-To learn more, take a look at the following resources:
+* Google Cloud Generative AI APAC Program
+* NASA Open Science Graduate
+* Walmart Global Tech Advanced Software Engineering Job Simulation
+* JP Morgan Chase Software Engineering Job Simulation
+* Deloitte Data Analytics Job Simulation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+### Hackathons
+
+* Google Cloud Rapid Agent Hackathon 2026
+* IIT Madras Road Safety Intelligence Hackathon
+* GrabHack 2.0
+
+---
+
+## Featured Projects
+
+### SafeSakhi AI
+
+AI-powered women safety platform built using intelligent agents, emergency workflows, location intelligence, and Gemini-powered assistance.
+
+**Tech Stack**
+
+* React
+* TypeScript
+* Node.js
+* Firebase
+* Google Maps API
+* Gemini AI
+* AI Agents
+
+### EarthAI
+
+AI Pollution Monitoring & Awareness Platform developed as a final-year project.
+
+**Tech Stack**
+
+* Java
+* Servlets
+* JSP
+* Hibernate
+* PostgreSQL
+* OpenWeather API
+
+### AI Road Safety Intelligence System
+
+AI-powered road safety platform built during the IIT Madras Hackathon.
+
+**Tech Stack**
+
+* React
+* Node.js
+* Express
+* Gemini API
+* Google Maps API
+
+### EnterpriseRAG AI
+
+Enterprise Retrieval-Augmented Generation platform for intelligent knowledge retrieval.
+
+**Tech Stack**
+
+* Python
+* FastAPI
+* Vector Databases
+* RAG
+* LLMs
+* PostgreSQL
+
+---
+
+## Technology Stack
+
+### Backend
+
+* Java
+* Spring Boot
+* Python
+* FastAPI
+* Node.js
+* REST APIs
+
+### AI & Machine Learning
+
+* Large Language Models (LLMs)
+* Retrieval-Augmented Generation (RAG)
+* AI Agents
+* Prompt Engineering
+* Vector Databases
+* LangChain
+
+### Databases
+
+* PostgreSQL
+* MySQL
+* MongoDB
+* Firebase
+* Redis
+
+### Cloud & DevOps
+
+* Google Cloud Platform
+* Vertex AI
+* Cloud Run
+* Docker
+* GitHub Actions
+* CI/CD
+
+### Architecture
+
+* Microservices
+* Distributed Systems
+* Event-Driven Architecture
+* System Design
+
+---
+
+## Portfolio Features
+
+* Modern Responsive Design
+* Interactive Animations
+* Project Showcase
+* Open Source Contributions
+* Hackathon Achievements
+* Certifications
+* Resume Download
+* Recruiter-Friendly Layout
+
+---
+
+## Built With
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* Lucide Icons
+
+---
+
+## Contact
+
+**Aishwarya Kawade**
+
+* GitHub: https://github.com/KAishwarya2429
+* LinkedIn: https://www.linkedin.com/in/aishwarya-kawade-9b0356319
+
+---
+
+### Building Intelligent Systems, One Project at a Time.
