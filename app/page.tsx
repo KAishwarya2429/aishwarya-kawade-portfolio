@@ -1,12 +1,14 @@
-import { Navigation } from '@/components/navigation'
-import { Hero } from '@/components/sections/hero'
-import { Stats } from '@/components/sections/stats'
-import { FeaturedProjects } from '@/components/sections/featured-projects'
-import { TechStack } from '@/components/sections/tech-stack'
-import { OpenSource } from '@/components/sections/open-source'
-import { Timeline } from '@/components/sections/timeline'
-import { Contact } from '@/components/sections/contact'
-import { Footer } from '@/components/sections/footer'
+import { Navigation } from "@/components/navigation";
+import { Hero } from "@/components/sections/hero";
+import { Stats } from "@/components/sections/stats";
+import { FeaturedProjects } from "@/components/sections/featured-projects";
+import { TechStack } from "@/components/sections/tech-stack";
+import { OpenSource } from "@/components/sections/open-source";
+import { Timeline } from "@/components/sections/timeline";
+import { Contact } from "@/components/sections/contact";
+import { Footer } from "@/components/sections/footer";
+import { Hackathons } from "@/components/sections/hackathons";
+import { Certifications } from "@/components/sections/certifications";
 
 export default function Page() {
   return (
@@ -38,6 +40,16 @@ export default function Page() {
           <OpenSource />
         </div>
 
+        {/*Hackathons*/}
+        <div id="hackathons">
+          <Hackathons />
+        </div>
+
+        {/* Certifications */}
+        <div id="certifications">
+          <Certifications />
+        </div>
+
         {/* Timeline */}
         <div id="timeline">
           <Timeline />
@@ -52,5 +64,5 @@ export default function Page() {
         <Footer />
       </main>
     </>
-  )
+  );
 }

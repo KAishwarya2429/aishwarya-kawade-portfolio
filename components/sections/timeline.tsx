@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { resume } from '@/data/resume'
+import { motion } from "framer-motion";
+import { resume } from "@/data/resume";
 
 export function Timeline() {
   const containerVariants = {
@@ -12,7 +12,7 @@ export function Timeline() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, x: -30 },
@@ -21,7 +21,7 @@ export function Timeline() {
       x: 0,
       transition: { duration: 0.6 },
     },
-  }
+  };
 
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 w-full bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent">
@@ -36,7 +36,7 @@ export function Timeline() {
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             <span className="gradient-text">My Journey</span>
           </h2>
-          <p className="text-gray-400 text-lg">From 2023 to the future</p>
+          <p className="text-gray-400 text-lg">From 2019 to the future</p>
         </motion.div>
 
         <motion.div
@@ -53,23 +53,32 @@ export function Timeline() {
             {resume.timeline.map((timelineItem, index) => (
               <motion.div
                 key={timelineItem.year}
-                className={`flex gap-6 sm:gap-0 ${index % 2 === 0 ? 'sm:flex-row-reverse' : ''}`}
+                className={`flex gap-6 sm:gap-0 ${index % 2 === 0 ? "sm:flex-row-reverse" : ""}`}
                 variants={itemVariants}
               >
                 {/* Content */}
-                <div className={`flex-grow ${index % 2 === 0 ? 'sm:pr-[calc(50%+1.5rem)]' : 'sm:pl-[calc(50%+1.5rem)]'}`}>
+                <div
+                  className={`flex-grow ${index % 2 === 0 ? "sm:pr-[calc(50%+1.5rem)]" : "sm:pl-[calc(50%+1.5rem)]"}`}
+                >
                   <motion.div
                     className="glass-card p-6 sm:p-8 rounded-xl hover:bg-[rgba(255,255,255,0.1)] transition-all duration-300"
                     whileHover={{ scale: 1.02, y: -5 }}
                   >
                     {/* Year */}
-                    <h3 className="text-3xl font-bold gradient-text mb-4">{timelineItem.year}</h3>
+                    <h3 className="text-3xl font-bold gradient-text mb-4">
+                      {timelineItem.year}
+                    </h3>
 
                     {/* Events */}
                     <ul className="space-y-3">
                       {timelineItem.events.map((event, i) => (
-                        <li key={i} className="flex items-start gap-3 text-gray-300">
-                          <span className="text-cyan-400 font-bold mt-1">→</span>
+                        <li
+                          key={i}
+                          className="flex items-start gap-3 text-gray-300"
+                        >
+                          <span className="text-cyan-400 font-bold mt-1">
+                            →
+                          </span>
                           <span>{event}</span>
                         </li>
                       ))}
@@ -108,10 +117,12 @@ export function Timeline() {
           viewport={{ once: true }}
         >
           <div className="inline-block glass-card px-6 py-3 rounded-full">
-            <p className="text-cyan-400 font-semibold">The journey continues...</p>
+            <p className="text-cyan-400 font-semibold">
+              The journey continues...
+            </p>
           </div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

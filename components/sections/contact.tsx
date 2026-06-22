@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Mail, Briefcase, Code2, Phone, MapPin } from 'lucide-react'
-import { resume } from '@/data/resume'
+import { motion } from "framer-motion";
+import { Mail, Briefcase, Code2, Phone, MapPin } from "lucide-react";
+import { resume } from "@/data/resume";
 
 export function Contact() {
   return (
@@ -19,7 +19,8 @@ export function Contact() {
             <span className="gradient-text">Let&apos;s Connect</span>
           </h2>
           <p className="text-gray-400 text-lg">
-            Interested in collaborating or discussing AI, backend systems, or open source?
+            Interested in collaborating or discussing AI, backend systems, or
+            open source?
           </p>
         </motion.div>
 
@@ -33,13 +34,18 @@ export function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Contact Info */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-white mb-6">Get in Touch</h3>
+              <h3 className="text-xl font-bold text-white mb-6">
+                Get in Touch
+              </h3>
 
               <a
                 href={`mailto:${resume.email}`}
                 className="flex items-center gap-3 p-4 rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors group"
               >
-                <Mail size={24} className="text-cyan-400 group-hover:scale-110 transition-transform" />
+                <Mail
+                  size={24}
+                  className="text-cyan-400 group-hover:scale-110 transition-transform"
+                />
                 <div>
                   <p className="text-xs text-gray-500 uppercase">Email</p>
                   <p className="text-white font-semibold group-hover:text-cyan-400 transition-colors">
@@ -52,7 +58,10 @@ export function Contact() {
                 href={`tel:${resume.phone}`}
                 className="flex items-center gap-3 p-4 rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors group"
               >
-                <Phone size={24} className="text-cyan-400 group-hover:scale-110 transition-transform" />
+                <Phone
+                  size={24}
+                  className="text-cyan-400 group-hover:scale-110 transition-transform"
+                />
                 <div>
                   <p className="text-xs text-gray-500 uppercase">Phone</p>
                   <p className="text-white font-semibold group-hover:text-cyan-400 transition-colors">
@@ -80,7 +89,10 @@ export function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors group"
               >
-                <Code2 size={24} className="text-cyan-400 group-hover:scale-110 transition-transform" />
+                <Code2
+                  size={24}
+                  className="text-cyan-400 group-hover:scale-110 transition-transform"
+                />
                 <div>
                   <p className="text-xs text-gray-500 uppercase">GitHub</p>
                   <p className="text-white font-semibold group-hover:text-cyan-400 transition-colors">
@@ -95,7 +107,10 @@ export function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors group"
               >
-                <Briefcase size={24} className="text-cyan-400 group-hover:scale-110 transition-transform" />
+                <Briefcase
+                  size={24}
+                  className="text-cyan-400 group-hover:scale-110 transition-transform"
+                />
                 <div>
                   <p className="text-xs text-gray-500 uppercase">LinkedIn</p>
                   <p className="text-white font-semibold group-hover:text-cyan-400 transition-colors">
@@ -154,10 +169,11 @@ export function Contact() {
           viewport={{ once: true }}
         >
           <p>
-            Open to full-time, contract, and project-based opportunities. Currently interested in AI engineering roles.
+            Open to full-time, contract, and project-based opportunities.
+            Currently interested in AI engineering roles.
           </p>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

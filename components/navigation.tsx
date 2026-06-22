@@ -1,47 +1,52 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const navItems = [
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Timeline', href: '#timeline' },
-  { name: 'Contact', href: '#contact' },
-]
+  { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
+  { name: "Open Source", href: "#open-source" },
+  { name: "Hackathon", href: "#hackathons" },
+  { name: "certifications", href: "#certifications" },
+  { name: "Timeline", href: "#timeline" },
+  { name: "Contact", href: "#contact" },
+];
 
 export function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [activeSection, setActiveSection] = useState('')
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      setIsScrolled(window.scrollY > 50);
 
       // Update active section
       for (const item of navItems) {
-        const element = document.querySelector(item.href)
+        const element = document.querySelector(item.href);
         if (element) {
-          const rect = element.getBoundingClientRect()
+          const rect = element.getBoundingClientRect();
           if (rect.top <= 100) {
-            setActiveSection(item.href)
+            setActiveSection(item.href);
           }
         }
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-card' : 'border-b border-transparent'
+        isScrolled ? "glass-card" : "border-b border-transparent"
       }`}
       style={{
-        backdropFilter: isScrolled ? 'blur(12px)' : 'none',
-        backgroundColor: isScrolled ? 'rgba(10, 10, 10, 0.8)' : 'transparent',
+        backdropFilter: isScrolled ? "blur(12px)" : "none",
+        backgroundColor: isScrolled ? "rgba(10, 10, 10, 0.8)" : "transparent",
       }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
@@ -52,7 +57,9 @@ export function Navigation() {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 flex items-center justify-center">
             <span className="text-white font-bold text-sm">AK</span>
           </div>
-          <span className="text-white font-bold hidden sm:block">Aishwarya</span>
+          <span className="text-white font-bold hidden sm:block">
+            Aishwarya
+          </span>
         </motion.div>
 
         {/* Desktop Navigation */}
@@ -63,8 +70,8 @@ export function Navigation() {
               href={item.href}
               className={`text-sm font-medium transition-colors ${
                 activeSection === item.href
-                  ? 'text-cyan-400'
-                  : 'text-gray-300 hover:text-cyan-400'
+                  ? "text-cyan-400"
+                  : "text-gray-300 hover:text-cyan-400"
               }`}
             >
               {item.name}
@@ -83,5 +90,5 @@ export function Navigation() {
         </div>
       </div>
     </motion.nav>
-  )
+  );
 }

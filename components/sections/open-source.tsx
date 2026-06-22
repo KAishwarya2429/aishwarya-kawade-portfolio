@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { resume } from '@/data/resume'
-import { Code2, Star, GitFork, ExternalLink } from 'lucide-react'
+import { motion } from "framer-motion";
+import { resume } from "@/data/resume";
+import { Code2, Star, GitFork, ExternalLink } from "lucide-react";
 
 export function OpenSource() {
   const containerVariants = {
@@ -13,7 +13,7 @@ export function OpenSource() {
         staggerChildren: 0.12,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, x: -30 },
@@ -22,7 +22,7 @@ export function OpenSource() {
       x: 0,
       transition: { duration: 0.5 },
     },
-  }
+  };
 
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 w-full bg-gradient-to-b from-transparent via-green-500/5 to-transparent">
@@ -34,10 +34,12 @@ export function OpenSource() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+          <h2 id="open-source" className="text-4xl sm:text-5xl font-bold mb-4">
             <span className="gradient-text">Open Source Contributions</span>
           </h2>
-          <p className="text-gray-400 text-lg">Projects I maintain and contribute to</p>
+          <p className="text-gray-400 text-lg">
+            Projects I maintain and contribute to
+          </p>
         </motion.div>
 
         <motion.div
@@ -76,7 +78,9 @@ export function OpenSource() {
                 </a>
               </div>
 
-              <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
+              <p className="text-gray-300 mb-4 leading-relaxed">
+                {project.description}
+              </p>
               <p className="text-gray-400 text-sm mb-4 italic border-l-2 border-cyan-400/50 pl-4">
                 {project.contributions}
               </p>
@@ -84,11 +88,15 @@ export function OpenSource() {
               <div className="flex flex-wrap gap-3">
                 <div className="flex items-center gap-2 px-3 py-1 bg-[rgba(0,212,255,0.1)] rounded-lg">
                   <Star size={16} className="text-cyan-400" />
-                  <span className="text-sm text-cyan-300 font-semibold">{project.stars} stars</span>
+                  <span className="text-sm text-cyan-300 font-semibold">
+                    {project.stars} stars
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 px-3 py-1 bg-[rgba(0,212,255,0.1)] rounded-lg">
                   <GitFork size={16} className="text-cyan-400" />
-                  <span className="text-sm text-cyan-300 font-semibold">{project.prs} PRs</span>
+                  <span className="text-sm text-cyan-300 font-semibold">
+                    {project.prs} PRs
+                  </span>
                 </div>
               </div>
             </motion.div>
@@ -96,5 +104,5 @@ export function OpenSource() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
