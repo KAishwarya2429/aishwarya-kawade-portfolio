@@ -10,19 +10,27 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Aishwarya Kawade | AI & Backend Engineer',
+  description: 'AI Engineer & Backend Developer. Building distributed systems, AI agents, and scalable solutions. Open source contributor. Available for top-tier tech roles.',
+  keywords: ['AI Engineer', 'Backend Developer', 'Distributed Systems', 'LLMs', 'RAG', 'Open Source', 'Spring Boot', 'Python', 'GCP'],
+  authors: [{ name: 'Aishwarya Kawade' }],
+  creator: 'Aishwarya Kawade',
   generator: 'v0.app',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://aishwaryakawade.com',
+    siteName: 'Aishwarya Kawade',
+    title: 'Aishwarya Kawade | AI & Backend Engineer',
+    description: 'Explore my projects, open source work, and technical expertise in AI, backend systems, and distributed architecture.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Aishwarya Kawade | AI & Backend Engineer',
+    description: 'AI Engineer & Backend Developer. Building distributed systems and AI solutions.',
+  },
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
       {
         url: '/icon.svg',
         type: 'image/svg+xml',
@@ -33,11 +41,12 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'dark',
+  themeColor: '#0a0a0a',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 }
 
 export default function RootLayout({
@@ -46,8 +55,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="font-sans antialiased">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} dark`}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="color-scheme" content="dark" />
+      </head>
+      <body className="font-sans antialiased bg-background text-foreground overflow-x-hidden">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
