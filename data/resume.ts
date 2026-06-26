@@ -299,9 +299,9 @@ export const resume = {
     },
     {
       year: "2026 - Present",
-      title: "Master of Computer Applications (MCA)",
+      title: "Master of Computer Science (MCS)",
       events: [
-        "Pursuing MCA with a focus on Advanced Software Development, AI, and Distributed Systems",
+        "Pursuing MCS with a focus on Advanced Software Development, AI, and Distributed Systems",
         "Building AI-powered applications, backend systems, and cloud-native solutions",
         "Actively contributing to open-source projects and technical communities",
         "Participating in hackathons, research programs, and industry-focused learning initiatives",
